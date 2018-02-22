@@ -1,0 +1,62 @@
+* {box-sizing: border-box;}
+
+html, body {height: 100%;
+      margin: 0 auto;
+      background-color: white;
+      font-family: 'Bellefair', serif;
+    color: cadetblue;
+}
+
+.bg {background-image: url(pictures/background2.jpg);
+     height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.5px solid grey;
+}
+    
+.kvietimas {display: block;
+    margin: 25px auto;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.register {
+    margin: 5px auto;
+}
+
+h4 {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+    border: 2px solid cadetblue;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px; 
+    
+}
+
+h4:hover {
+    background-color: tomato;    
+    transition-duration: 1s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg2 {
+    margin: 50px 0px 0px 0px;
+    background-image: url(pictures/background1.jpg);
+    height: 36%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.5px solid grey;
+}
