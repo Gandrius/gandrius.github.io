@@ -4,7 +4,6 @@ html, body {
     background: #000;
 }
 
-
 ul {
     position: absolute;
     top: 50%;
@@ -97,28 +96,13 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
+    margin: 0;
+    padding: 0;
     transform: translate(-50%,-50%);
     margin: 0;
     padding: 0;
     width: 600px;
     height: 150px;
-}
-
-ul li {
-    list-style: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: #000;
-    margin: -100px;
-    transform: rotate(45deg);
-    transition: .5s;
-    overflow: hidden;
-    opacity: .65;
-}
-
-ul li:hover {
-    opacity: 1;
 }
 
 ul li.item1 {
