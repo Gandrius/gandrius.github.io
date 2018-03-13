@@ -1,62 +1,91 @@
-* {box-sizing: border-box;}
-
-html, body {height: 100%;
-      margin: 0 auto;
-      background-color: white;
-      font-family: 'Bellefair', serif;
-    color: cadetblue;
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
 }
 
-.bg {background-image: url(pictures/background2.jpg);
-     height: 40%;
-    background-position: center;
-    background-repeat: no-repeat;
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 150px;
+}
+
+ul li {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    margin: -100px;
+    transform: rotate(45deg);
+    transition: .5s;
+    overflow: hidden;
+    opacity: .65;
+}
+
+ul li:hover {
+    opacity: 1;
+}
+
+ul li.item1 {
+    top: 0;
+    left: 0;
+}
+
+ul li.item2 {
+    bottom: 0;
+    left: 25%;
+}
+
+ul li.item3 {
+    top: 0;
+    left: 50%;
+}
+
+ul li.item4 {
+    bottom: 0;
+    left: 75%;
+}
+
+ul li.item5 {
+    top: 0;
+    left: 100%;
+}
+
+ul li .bg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.42);
+}
+
+ul li.item1 .bg {
+    background: url("images/img1.JPG");
     background-size: cover;
-    border: 0.5px solid grey;
-}
-    
-.kvietimas {display: block;
-    margin: 25px auto;
-    text-align: center;
-    padding: 5px 15px;
 }
 
-h1 {
-    font-size: 50px;
-}
-
-.register {
-    margin: 5px auto;
-}
-
-h4 {
-    display: block;
-    margin: auto;
-    max-width: 250px;
-    border: 2px solid cadetblue;
-    background-color: crimson;
-    color: white;
-    text-align: center;
-    padding: 8px;
-    border-radius: 10px; 
-    
-}
-
-h4:hover {
-    background-color: tomato;    
-    transition-duration: 1s;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.bg2 {
-    margin: 50px 0px 0px 0px;
-    background-image: url(pictures/background1.jpg);
-    height: 36%;
-    background-position: center;
-    background-repeat: no-repeat;
+ul li.item2 .bg {
+    background: url("images/img2.JPG");
     background-size: cover;
-    border: 0.5px solid grey;
 }
+
+ul li.item3 .bg {
+    background: url("images/img3.JPG");
+    background-size: cover;
+}
+
+ul li.item4 .bg {
+    background: url("images/img4.JPG");
+    background-size: cover;
+}
+
+ul li.item5 .bg {
+    background: url("images/img5.JPG");
+    background-size: cover;
+}
+
+
