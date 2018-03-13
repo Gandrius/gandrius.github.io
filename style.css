@@ -11,8 +11,9 @@ ul {
     transform: translate(-50%,-50%);
     margin: 0;
     padding: 0;
-    width: 400px;
-    height: 400px;
+    width: 280px;
+    height: 600px;
+    /*border: solid 1px grey;*/
 }
 
 ul li {
@@ -38,12 +39,12 @@ ul li.item1 {
 }
 
 ul li.item2 {
-    bottom: 31%;
-    left: 31%;
+    bottom: 37.5%;
+    left: 0;
 }
 
 ul li.item3 {
-    top: 0;
+    top: 19%;
     right: 0;
 }
 
@@ -53,10 +54,9 @@ ul li.item4 {
 }
 
 ul li.item5 {
-    bottom: 0;
+    bottom: 19%;
      right: 0;
 }
-
 
 ul li .bg {
     width: 100%;
@@ -89,6 +89,57 @@ ul li.item5 .bg {
     background-size: cover;
 }
 
+@media (min-width: 600px) {
+    
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+}
+
+ul li {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    margin: 0px;
+    transform: rotate(45deg);
+    transition: .5s;
+    overflow: hidden;
+    opacity: .65;
+}
+
+ul li.item1 {
+    top: 0;
+    left: 0;
+}
+
+ul li.item2 {
+    bottom: 30%;
+    left: 30%;
+}
+
+ul li.item3 {
+    top: 0;
+    right: 0;
+}
+
+ul li.item4 {
+    bottom: 0;
+    left: 0;
+}
+
+ul li.item5 {
+    bottom: 0;
+     right: 0;
+}
+}
 
 @media (min-width: 900px) {
     
