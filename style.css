@@ -4,6 +4,95 @@ html, body {
     background: #000;
 }
 
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 300px;
+}
+
+ul li {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    margin: -100px;
+    transform: rotate(45deg);
+    transition: .5s;
+    overflow: hidden;
+    opacity: .65;
+}
+
+ul li:hover {
+    opacity: 1;
+}
+
+ul li.item1 {
+    top: 0;
+    left: 25%;
+}
+
+ul li.item2 {
+    bottom: 50%;
+    left: 50%;
+}
+
+ul li.item3 {
+    top: 0;
+    left: 75%;
+}
+
+ul li.item4 {
+    bottom: 0;
+    left: 25%;
+}
+
+ul li.item5 {
+    bottom: 0;
+    left: 75%;
+}
+
+
+ul li .bg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.42);
+}
+
+ul li.item1 .bg {
+    background: url("images/img1.JPG");
+    background-size: cover;
+}
+
+ul li.item2 .bg {
+    background: url("images/img2.JPG");
+    background-size: cover;
+}
+
+ul li.item3 .bg {
+    background: url("images/img3.JPG");
+    background-size: cover;
+}
+
+ul li.item4 .bg {
+    background: url("images/img4.JPG");
+    background-size: cover;
+}
+
+ul li.item5 .bg {
+    background: url("images/img5.JPG");
+    background-size: cover;
+}
+
+
+@media (min-width: 900px) {
+    
 ul {
     position: absolute;
     top: 50%;
@@ -56,36 +145,5 @@ ul li.item5 {
     top: 0;
     left: 100%;
 }
-
-ul li .bg {
-    width: 100%;
-    height: 100%;
-    transform: rotate(-45deg) scale(1.42);
 }
-
-ul li.item1 .bg {
-    background: url("images/img1.JPG");
-    background-size: cover;
-}
-
-ul li.item2 .bg {
-    background: url("images/img2.JPG");
-    background-size: cover;
-}
-
-ul li.item3 .bg {
-    background: url("images/img3.JPG");
-    background-size: cover;
-}
-
-ul li.item4 .bg {
-    background: url("images/img4.JPG");
-    background-size: cover;
-}
-
-ul li.item5 .bg {
-    background: url("images/img5.JPG");
-    background-size: cover;
-}
-
 
