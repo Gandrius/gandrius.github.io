@@ -83,7 +83,7 @@ html, body {
 }
 
 .slide1 {
-    background: url(../images/min/slide2.jpeg) no-repeat 50% 50%;
+    background: url(../images/min/1.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -93,7 +93,7 @@ html, body {
 }
 
 .slide3 {
-    background:url(../images/min/1.jpeg) no-repeat 50% 50%;
+    background:url(../images/min/slide5-min.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
