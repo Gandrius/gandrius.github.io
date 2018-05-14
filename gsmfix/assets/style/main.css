@@ -1,0 +1,149 @@
+* {box-sizing: border-box;}
+
+html, body {
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+    min-width: 300px;
+}
+
+.flex {
+    display: flex;
+}
+
+.mainbox {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 10vh;
+}
+
+.home-container {
+    position: relative;
+    height: 90vh;
+}
+
+.slider {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    /* z-index: -1; */
+}
+
+.slider div {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.slider div .content {
+    color: white;
+    /* align-items: center; */
+    /* justify-content: center;
+    height: 100%; */
+    text-align: center;
+}
+
+.content h1, .content h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 15%;
+    color: rgb(250, 121, 15);
+}
+
+.content h1 span, h2 span {
+    display: inline-block;
+    padding: 20px 5px;
+    font-size: 2rem;
+    text-transform: none;
+    color: white;
+}
+
+.content .button {
+    margin-top: 40px;
+}
+
+.button a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    background: rgba(88, 88, 88, 0.8);
+    transition: all .7s;
+}
+
+.button a:hover {
+    background: rgb(250, 121, 15);
+}
+
+.slide1 {
+    background: url(../images/min/slide5-min.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide2 {
+    background: url(../images/min/slide6-min.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide3 {
+    background:url(../images/min/1.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slider-nav {
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+    width: 100%;
+    padding: 20px;
+}
+
+.box {
+    justify-content: space-around;
+    align-self: flex-end;
+    width: 100%;
+    z-index: 1;
+}
+
+.box-1 {
+    width: 33.3%;
+    background: rgba(104, 103, 103, 0.3);
+    padding: 30px;
+    align-items: center;
+    transition: all .8s;
+}
+
+.box-1:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.box-1:hover {
+    background: rgb(250, 121, 15);
+}
+
+.box-1 i {
+    font-size: 4rem;
+    padding-right: 25px;
+    color: white;
+}
+
+.box-1 p {
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.box-1 p span {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    display: block;
+}
+
+
