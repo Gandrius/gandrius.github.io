@@ -253,11 +253,12 @@ html, body {
 .phones, .mac {
     margin-bottom: 50px;
     flex-wrap: wrap;
-    /* height: 400px; */
+    align-items: center;
 }
 
 .phones .image-box {
     width: 50%;
+    height: 400px;
     border: 1px solid rgb(57, 81, 102);
     background:url(../images/services/iphone-ipad-1-min.jpeg) no-repeat 50% 50%;
     background-size: cover;
@@ -291,8 +292,9 @@ html, body {
     background: rgba(235,235,235,0.7);
     box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5);
     transition: all .7s;
-    flex: 1 1 150px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    width: 45%;
+    text-align: center;
 }
 
 .services-box p:hover {
@@ -305,6 +307,16 @@ html, body {
     border: 1px solid rgb(57, 81, 102);
     background:url(../images/services/mac-1-min.jpeg) no-repeat 50% 50%;
     background-size: cover;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.picture1 {
+    width: 45%;
+}
+
+.picture1 img {
+    width: 100%;
 }
 
 /* ANIMACIJOS */
@@ -370,6 +382,15 @@ html, body {
     .services-box p {
         font-size: 1rem;
     }
+
+    .phones .image-box {
+        width: 30%;
+    }
+
+    .services-box {
+        width: 70%;
+        padding: 10px;
+    }
 }
 
 @media(max-width: 700px){
@@ -410,6 +431,10 @@ html, body {
         width: 100%;
         padding: 5px;
         justify-content: center;
+    }
+
+    .services-box p {
+        width: 49%;
     }
 }
 
