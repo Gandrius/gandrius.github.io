@@ -251,7 +251,7 @@ html, body {
 /* PASLAUGOS */
 
 .phones, .mac {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
     /* height: 400px; */
 }
@@ -279,8 +279,9 @@ html, body {
 .services-box .service-title {
     font-size: 2rem; 
     padding-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%;
+    text-align: center;
 }
 
 .services-box p {
@@ -364,6 +365,10 @@ html, body {
     .why-box {
         width: 45%;
         margin-bottom: 25px;
+    }
+
+    .services-box p {
+        font-size: 1rem;
     }
 }
 
@@ -456,10 +461,6 @@ html, body {
     .title {
         font-size: 1.6rem;
         margin: 30px 0 45px;
-    }
-
-    .services-box .service-title {
-        text-align: center;
     }
 
     .services-box p {
