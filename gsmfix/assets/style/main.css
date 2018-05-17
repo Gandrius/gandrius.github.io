@@ -251,14 +251,14 @@ html, body {
 /* PASLAUGOS */
 
 .phones, .mac {
-    margin-bottom: 50px;
+    margin: -20px 5px 50px 5px;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .phones .image-box {
     width: 50%;
-    height: 400px;
+    height: 350px;
     border: 1px solid rgb(57, 81, 102);
     background:url(../images/services/iphone-ipad-1-min.jpeg) no-repeat 50% 50%;
     background-size: cover;
@@ -272,8 +272,8 @@ html, body {
 
 .services-box {
     width: 50%;
-    padding: 20px;
-    justify-content: center;
+    padding-left: 10px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -286,14 +286,14 @@ html, body {
 }
 
 .services-box p {
-    margin: 0 5px 10px 0;
+    margin: 0 0 10px 0;
     display: inline-block;
     padding: 10px 8px;
     background: rgba(235,235,235,0.7);
     box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5);
     transition: all .7s;
     font-size: 1.1rem;
-    width: 45%;
+    width: 47%;
     text-align: center;
 }
 
@@ -383,12 +383,11 @@ html, body {
         font-size: 1rem;
     }
 
-    .phones .image-box {
-        width: 30%;
-    }
+    /* .phones .image-box {
+        width: 40%;
+    } */
 
     .services-box {
-        width: 70%;
         padding: 10px;
     }
 }
@@ -430,11 +429,10 @@ html, body {
     .services-box {
         width: 100%;
         padding: 5px;
-        justify-content: center;
     }
 
     .services-box p {
-        width: 49%;
+        width: 48%;
     }
 }
 
@@ -486,6 +484,10 @@ html, body {
     .title {
         font-size: 1.6rem;
         margin: 30px 0 45px;
+    }
+
+    .services-box .service-title {
+        font-size: 1.6rem;
     }
 
     .services-box p {
