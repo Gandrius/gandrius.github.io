@@ -248,6 +248,71 @@ html, body {
     font-size: 1.7rem;
 }
 
+/* PASLAUGOS */
+
+.phones, .mac {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    /* height: 400px; */
+}
+
+.phones .image-box {
+    width: 50%;
+    border: 1px solid rgb(57, 81, 102);
+    background:url(../images/services/iphone-ipad-1-min.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    transition: all 2s;
+}
+
+.phones .image-box:hover {
+    background:url(../images/services/iphone-ipad-2-min.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.services-box {
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* .container-s {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, 250px); /*minmax(200px, 1fr)); */
+    /*grid-auto-rows: 45px;
+    grid-auto-flow: dense;
+} */
+
+.services-box .service-title {
+    font-size: 2rem; 
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.services-box p {
+    margin: 0 5px 10px 0;
+    display: inline-block;
+    padding: 10px 8px;
+    background: rgba(235,235,235,0.7);
+    box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5);
+    transition: all .7s;
+    flex: 1 1 150px;
+}
+
+.services-box p:hover {
+    background: rgb(250, 121, 15);
+    cursor: context-menu;
+}
+
+.mac .image-box {
+    width: 50%;
+    border: 1px solid rgb(57, 81, 102);
+    background:url(../images/services/mac-1-min.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
 /* ANIMACIJOS */
 
 @keyframes ghost {
@@ -330,6 +395,23 @@ html, body {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         width: 100%;
+    }
+
+    .phones, .mac {
+        flex-wrap: wrap;
+    }
+
+    .phones .image-box {
+        width: 100%;
+        height: 300px;
+        margin: 0 5px;
+        order: 1;
+    }
+
+    .services-box {
+        width: 100%;
+        padding: 5px;
+        justify-content: center;
     }
 }
 
