@@ -250,31 +250,46 @@ html, body {
 
 /* PASLAUGOS */
 
-.phones, .mac {
+.phones, .mac, .priedai {
     margin: -20px 5px 50px 5px;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.phones .image-box {
-    width: 50%;
-    height: 350px;
-    border: 1px solid rgb(57, 81, 102);
-    background:url(../images/services/iphone-ipad-1-min.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-    transition: all 2s;
+.phones {
+    margin: -20px 5px 50px 5px;
 }
 
-.phones .image-box:hover {
+.mac, .priedai {
+    margin: 20px 5px 50px 5px;
+}
+
+.image-box {
+    width: 50%;
+    border: 1px solid rgb(57, 81, 102);
+}
+
+.phones .image-box {
+    height: 400px;
+    background:url(../images/services/iphone-ipad-1-min.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    /* transition: all 2s; */
+}
+
+/* .phones .image-box:hover {
     background:url(../images/services/iphone-ipad-2-min.jpg) no-repeat 50% 50%;
     background-size: cover;
-}
+} */
 
 .services-box {
     width: 50%;
     padding-left: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.mac .services-box {
+    padding-right: 10px;
 }
 
 .services-box .service-title {
@@ -303,20 +318,15 @@ html, body {
 }
 
 .mac .image-box {
-    width: 50%;
-    border: 1px solid rgb(57, 81, 102);
+    height: 340px;
     background:url(../images/services/mac-1-min.jpeg) no-repeat 50% 50%;
     background-size: cover;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.picture1 {
-    width: 45%;
-}
-
-.picture1 img {
-    width: 100%;
+.priedai .image-box {
+    height: 300px;
+    background:url(../images/services/priedai-min.jpg) no-repeat 50% 50%;
+    background-size: cover;
 }
 
 /* ANIMACIJOS */
@@ -426,6 +436,18 @@ html, body {
         order: 1;
     }
 
+    .mac .image-box {
+        width: 100%;
+        height: 300px;
+        margin: 0 5px;
+    }
+
+    .priedai .image-box {
+        width: 100%;
+        margin: 0 5px;
+        order: 1;
+    }
+
     .services-box {
         width: 100%;
         padding: 5px;
@@ -484,6 +506,12 @@ html, body {
     .title {
         font-size: 1.6rem;
         margin: 30px 0 45px;
+    }
+
+    .phones .image-box, 
+    .mac .image-box,
+    .priedai .image-box {
+        height: 200px;
     }
 
     .services-box .service-title {
