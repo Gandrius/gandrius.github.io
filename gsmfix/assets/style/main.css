@@ -169,11 +169,16 @@ html, body {
     text-transform: uppercase;
 }
 
-.about p {
-    margin: 10px;
+.quality {
+    margin: 40px 5px 40px 5px;
     text-align: center;
     line-height: 1.2;
     padding: 0 10px;
+    font-size: 1.8rem;
+}
+
+.quality-m {
+    font-size: 1.7rem;
 }
 
 .values {
@@ -194,6 +199,7 @@ html, body {
 
 .icon-box {
     border: 1px solid rgb(57, 81, 102);
+    margin: 0 auto;
     align-self: center;
     transform: rotate(45deg);
     width: 75px;
@@ -238,14 +244,6 @@ html, body {
     font-size: 3.2rem;
     padding: 30px;
     text-align: center;
-}
-
-.quality {
-    font-size: 1.8rem;
-}
-
-.quality-m {
-    font-size: 1.7rem;
 }
 
 /* PASLAUGOS */
@@ -397,7 +395,7 @@ html, body {
 @media(max-width: 700px){
 
     .content h1, .content h2 {
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
     .box {
@@ -497,6 +495,7 @@ html, body {
 
     .quality {
         font-size: 1.2rem;
+        margin: 30px 5px 25px 5px;
     }
 
     .title {
@@ -538,6 +537,7 @@ html, body {
 
     .content h1, .content h2 {
         font-size: 1.6rem;
+        margin-top: 80px;
     }
 
     .content h1 span, h2 span {
