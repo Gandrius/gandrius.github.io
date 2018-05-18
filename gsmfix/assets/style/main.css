@@ -281,7 +281,7 @@ html, body {
     display: inline-block;
     padding: 10px 8px;
     background: rgba(247, 247, 247, 0.7);
-    /*box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5); */
+    box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5);
     transition: all .7s;
     font-size: 1.1rem;
     width: 47%;
