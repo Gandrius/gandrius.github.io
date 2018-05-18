@@ -174,7 +174,7 @@ html, body {
 }
 
 .quality-m {
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
 }
 
 .values {
@@ -280,8 +280,8 @@ html, body {
     margin: 0 0 10px 0;
     display: inline-block;
     padding: 10px 8px;
-    background: rgba(235,235,235,0.7);
-    box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5);
+    background: rgba(247, 247, 247, 0.7);
+    /*box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5); */
     transition: all .7s;
     font-size: 1.1rem;
     width: 47%;
