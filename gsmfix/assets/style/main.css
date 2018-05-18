@@ -2,7 +2,7 @@
 
 html, body {
     font-size: 12px;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     min-width: 300px;
 }
 
@@ -253,7 +253,7 @@ html, body {
 .phones, .mac, .priedai {
     margin: -20px 5px 70px 5px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: space-between;
 }
 
 .phones {
@@ -266,25 +266,19 @@ html, body {
 
 .image-box {
     width: 50%;
+    height: auto;
     border: 1px solid rgb(57, 81, 102);
 }
 
 .phones .image-box {
-    height: 400px;
     background:url(../images/services/iphone-ipad-1-min.jpeg) no-repeat 50% 50%;
     background-size: cover;
-    /* transition: all 2s; */
 }
-
-/* .phones .image-box:hover {
-    background:url(../images/services/iphone-ipad-2-min.jpg) no-repeat 50% 50%;
-    background-size: cover;
-} */
 
 .services-box {
     width: 50%;
     padding-left: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -318,13 +312,11 @@ html, body {
 }
 
 .mac .image-box {
-    height: 340px;
     background:url(../images/services/mac-1-min.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .priedai .image-box {
-    height: 300px;
     background:url(../images/services/priedai-min.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
