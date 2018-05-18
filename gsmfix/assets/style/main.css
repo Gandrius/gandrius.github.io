@@ -251,17 +251,17 @@ html, body {
 /* PASLAUGOS */
 
 .phones, .mac, .priedai {
-    margin: -20px 5px 50px 5px;
+    margin: -20px 5px 70px 5px;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .phones {
-    margin: -20px 5px 50px 5px;
+    margin: -20px 5px 70px 5px;
 }
 
 .mac, .priedai {
-    margin: 20px 5px 50px 5px;
+    margin: 20px 5px 70px 5px;
 }
 
 .image-box {
@@ -404,6 +404,10 @@ html, body {
 
 @media(max-width: 700px){
 
+    .content h1, .content h2 {
+        margin-top: 20px;
+    }
+
     .box {
         flex-wrap: wrap;
     }
@@ -495,7 +499,7 @@ html, body {
     }
 
     .box-1 p span {
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         font-size: 1.2rem;
     }
 
@@ -522,5 +526,41 @@ html, body {
         display: block;
         text-align: center;
     }
+}
 
+@media(max-height: 500px){
+
+    .box-1 {
+        /* padding: 20px; */
+        width: 30%;
+        padding: 10px;
+    }
+
+    .box-1:nth-child(2) {
+        width: 40%;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .content h1, .content h2 {
+        font-size: 1.6rem;
+    }
+
+    .content h1 span, h2 span {
+        font-size: 1rem;
+    }
+
+    .box-1 i {
+        font-size: 1.3rem;
+    }
+
+    .box-1 p {
+        font-size: 1.2rem;
+    }
+
+    .box-1 p span {
+        font-size: 1.2rem;
+    }
 }
