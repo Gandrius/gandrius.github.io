@@ -3,7 +3,7 @@
 html, body {
     font-size: 12px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .flex {
@@ -282,7 +282,7 @@ html, body {
     padding: 10px 8px;
     background: rgba(247, 247, 247, 0.7);
     box-shadow: 1px 1px 5px 1px rgba(87, 87, 87, 0.5);
-    transition: all .7s;
+    transition: all .6s;
     font-size: 1.1rem;
     width: 47%;
     text-align: center;
@@ -301,6 +301,22 @@ html, body {
 .priedai .image-box {
     background:url(../images/services/priedai-min.jpg) no-repeat 50% 50%;
     background-size: cover;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgb(87, 87, 87);
+}
+
+.footer {
+    justify-content: space-between;
+}
+
+.footer p {
+    padding: 30px 10px;
+    color: white;
+    font-size: 1.2rem;
 }
 
 @media(max-width: 1100px){
@@ -347,7 +363,7 @@ html, body {
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 750px){
 
     .content h1, .content h2 {
         margin-top: 60px;
@@ -374,8 +390,9 @@ html, body {
         width: 100%;
     }
 
-    .phones, .mac {
+   .phones, .mac, .priedai {
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
 
     .phones .image-box {
@@ -430,6 +447,15 @@ html, body {
 
     .content h1 span, h2 span {
         font-size: 1rem;
+    }
+
+    .content .button {
+        margin-top: 10px;
+    }
+
+    .button a {
+        font-size: .8rem;
+        padding: 7px 10px;
     }
 
     .box-1 {
@@ -498,15 +524,24 @@ html, body {
         font-size: 1rem;
     }
 
+    .content .button {
+        margin-top: 10px;
+    }
+
+    .button a {
+        font-size: .8rem;
+        padding: 7px 10px;
+    }
+
     .box-1 i {
         font-size: 1.3rem;
     }
 
     .box-1 p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .box-1 p span {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
