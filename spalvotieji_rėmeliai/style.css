@@ -1,0 +1,51 @@
+*{box-sizing: border-box}
+
+body {
+  background-color: black;
+}
+
+.box{
+  overflow:hidden;
+  width: 300px;/*200 + 2*animLine's border's width*/
+  height: 200px;/*200 + 2*animLine's border's height*/
+  margin:4px;
+  display:inline-block;
+}
+
+.animLine {
+  background-size: cover;
+  float: left;
+  width: 280px;
+  height: 200px;
+  position: relative;
+  border: 8px solid transparent;
+  background-clip: padding-box;
+}
+
+.animLine:after,.animLine:before{
+  border-color:#fff;
+  border-style: solid;
+  border-width:4px 0px;
+  position: absolute;
+  content: "";
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  overflow:hidden;
+  transition:1.2s;
+}
+
+.animLine:before{
+  border-width:0px 4px;
+}
+
+.animLine:hover:before {
+  transform:skewY(-180deg);
+  border-color:tomato; 
+}
+
+.animLine:hover:after {
+  transform:skewX(180deg);
+  border-color:greenyellow; 
+}
