@@ -1,61 +1,47 @@
 jQuery(function ($) {
-    // (function () {
+  // (function () {
 
-    $('#mymenulist li').click(gotoid);
-    function gotoid() {
-        event.preventDefault();
-        var x = document.getElementById("mymenulist");
-        x.className = "menu-list flex-horizontaliai";
-        // $('html, body').animate({scrollTop: $("#"+this.attr("alt")).offset().top-45}, 1000);
-        var nav = $("#" + $(this).attr("alt"));
-        if (nav.length) {
-            var contentNav = nav.offset().top;
-            $('html, body').animate({ scrollTop: contentNav }, 800);
-        }
+  function mymenulist(){
+    return document.getElementById("mymenulist");
+  }
+  function iconid(){
+    return document.getElementById("icon-id");
+  }
 
+  $('#mymenulist li, .button a').click(gotoid);
+  function gotoid(event) {
+    event.preventDefault();
+    mymenulist().className = "menu-list fleksas";
+    iconid().className = "icon";
+    var nav = $("#" + $(this).attr("alt"));
+    if (nav.length) {
+      var contentNav = nav.offset().top-$(".header-placeholder").height();
+      $('html, body').animate({ scrollTop: contentNav }, 800);
     }
+  }
 
-    $('.logo-holder').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 800);
-    });
+  $('.logo-holder').click(function (event) {
+    event.preventDefault();
+    mymenulist().className = "menu-list fleksas";
+    iconid().className = "icon";
+    $('html, body').animate({ scrollTop: 0 }, 800);
+  });
 
-    // document.getElementsByTagName("BODY")[0].onresize = function() {
-    $(window).bind('resize', function () {
-        // $( window ).resize(function() {
-        var x = document.getElementById("mymenulist");
-        var y = document.getElementById("icon-id");
+  $(window).bind('resize', function (event) {
+    event.preventDefault();
+    mymenulist().className = "menu-list fleksas";
+    iconid().className = "icon";
+  });
 
-        // if (document.getElementsByTagName("BODY")[0].width()>850) {
-        //console.log($('body').width());
-        // if ($('body').width()>850) {
-        // if ($( screen ).width()>850) {
-        if ($(window).innerWidth() > 830) {
-            x.className = "menu-list flex-horizontaliai";
-            y.className = "icon";
-            console.log($(window).innerWidth());
-        } else {
-            x.className = "menu-list";
-            y.className = "icon";
-            // $('body').addClass('big-screen').removeClass('small-screen');
-        }
-    });
-
-    $('.icon').click(showmenu);
-    function showmenu() {
-        event.preventDefault();
-        var x = document.getElementById("mymenulist");
-        var y = document.getElementById("icon-id");
-        if (x.className === "menu-list flex-horizontaliai") {
-            x.className = "menu-list";
-        }
-        //alert(x.className);
-        if (x.className === "menu-list") {
-            x.className += " responsive";
-            y.className += " responsive";
-        } else {
-            x.className = "menu-list";
-            y.className = "icon";
-        }
-    }
-
-});
+  $('.icon').click(showmenu1);
+  function showmenu1(event) {
+    event.preventDefault();
+      if (mymenulist().className === "menu-list fleksas") {
+        mymenulist().className = "menu-list responsive";
+        iconid().className = "icon responsive change";
+      }else{
+        mymenulist().className = "menu-list fleksas";
+        iconid().className = "icon";
+      }
+  }
+})
