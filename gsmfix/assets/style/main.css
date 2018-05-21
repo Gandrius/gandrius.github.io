@@ -393,6 +393,7 @@ html, body {
 
     .priedai .image-box {
         width: 100%;
+        height: 300px;
         margin: 0 5px;
         order: 1;
     }
