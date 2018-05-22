@@ -503,7 +503,7 @@ footer {
 
 /* @media(max-height: 500px) */
 
-@media(orientation : landscape), (max-device-height: 481px) {
+@media(orientation: landscape) and (max-height: 481px) {
 
     .box-1 {
         width: 30%;
