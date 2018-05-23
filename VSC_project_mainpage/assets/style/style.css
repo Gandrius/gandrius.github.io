@@ -1,0 +1,610 @@
+* {box-sizing: border-box}
+
+/*BENDRI DALYKAI*/
+
+html, body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
+}
+
+.flex {
+    display: flex;
+}
+
+.mainbox {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.box_sm {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p.aprasas {
+    line-height: 1.8;
+    color: #9b9999;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666262;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+/*HOME REIKALAI - CKANT, PUSLAPIO VIRŠUS*/
+
+/*LOGO IR MENU*/
+
+.home {
+    height: 70vh;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+/*
+    background: url(../../assets/images/home/images/home1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+*/
+    color: white;
+}
+
+.slider {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.slider div {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.slide1 {
+    background: url(../../assets/images/home/home12.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide2 {
+    background: url(../../assets/images/home/home5.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide3 {
+    background: url(../../assets/images/home/home11.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide4 {
+    background: url(../../assets/images/home/home2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.home header .header-top {
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.social-icons {
+    align-self: center;
+}
+
+.header-top .social-icons a {
+    font-size: 2rem;
+    padding-right: 10px;
+    color: rgba(255,255,255,0.8);
+}
+
+.header-top .social-icons a:hover {
+    color: #00bbf5;
+}
+
+.nav-container {
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+    padding: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-container ul li {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.nav-container ul li a.active {
+     color: #87b672;
+}
+
+.nav-container ul li a.active:hover {
+     color: #87b672;
+}
+
+.nav-container ul li a:hover {
+    color: #00bbf5;
+}
+
+/*HOME VIDURYS*/
+
+.home .home-middle {
+    justify-content: space-between;
+    margin: 0 70px;
+}
+
+.home .home-middle .arrows a {
+    color: rgba(225,225,225,0.4);
+    font-size: 6rem;
+}
+
+.home .home-middle .arrows a:hover {
+    color: #00bbf5;
+}
+
+.home-middle .mission li {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.home-middle .mission li:first-child {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-middle .mission li:first-child span {
+    color: #87b672;
+}
+
+.home-middle .mission li:nth-child(2) {
+    font-size: 1.2rem;
+}
+
+.home-middle .mission li:last-child {
+    margin-top: 50px;
+}
+
+.home-middle .mission li:last-child a {
+    padding: 15px 20px;
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: auto;
+}
+
+.home-middle .mission li:last-child a:hover {
+    background: #87b672;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-container .social-icons a:hover {
+    color: #00bbf5;
+}
+
+/*HOME APAČIA*/
+
+.home-bottom {
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home-bottom .circle {
+    margin-left: 5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background: rgb(225,225,225);
+}
+
+.home-bottom .active {
+    height: 15px;
+    width: 15px;
+}
+
+.home-bottom .circle:hover {
+    cursor: pointer;
+    background: #00bbf5;
+}
+
+/*BREAK LINIJA - ČIA DAR REIKIA PATOBULINT*/
+
+.break {
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(to right, rgb(44, 118, 126), rgb(18, 180, 115));
+}
+
+/*SERVISAI*/
+
+.services-top {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.services-bottom {
+    padding: 75px 0 60px;
+    border-top: 1px solid #cccccc;
+    justify-content: space-between;
+    color: #b9b7b7;
+    padding: 15px;
+}
+
+.services-bottom li {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.services-bottom li p.aprasas {
+/*    padding: 5px;*/
+    text-align: center;
+}
+
+.services-bottom li h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #666262;
+    font-weight: 500;
+    padding: 30px 0;
+}
+
+.services-bottom li p:last-child {
+    margin-top: 30px;
+}
+
+.services-bottom li a {
+    color: #87b672;
+}
+
+.services-bottom li a:hover {
+    color: #00bbf5;
+}
+
+/*WORKS AND PURCHASE IF YOU LIKE*/
+
+.works {
+    height: 360px;  /*reiks nuimt per media height*/
+    background: #efefef;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.examples {
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    bottom: -30px;
+}
+
+.examples li div img {
+    width: 100%;
+}
+
+.examples li h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #666262;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.buy {
+    margin-top: 130px;
+}
+
+.button {
+    margin: 40px 0 60px 0;
+}
+
+.button a {
+    padding: 15px 20px;
+    background: #87b672;;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button a:hover {
+    background: #00bbf5;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: #333;
+}
+
+.footer-top {
+    color: rgb(160,160,160);
+}
+
+.footer-top ul {
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.footer-top ul .width-wide {
+    flex: 0 0 40%;
+    padding-top: 60px;
+}
+
+.footer-top ul .width-normal {
+    flex: 0 0 17%;
+}
+
+.footer-top ul li .flex {
+   
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.flex .social-icons a {
+    padding-right: 10px;
+    color: rgba(255,255,255,0.8);
+}
+
+.flex .social-icons a:hover {
+    color: #00bbf5;
+}
+
+.footer-top ul li p {
+    padding: 0 0 10px;
+    line-height: 1.8;
+}
+
+.footer-top ul li p span {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-top ul li h5 {
+    padding: 50px 0 20px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-top ul li p.reset {
+    padding: 0;
+}
+
+.footer-top ul li p.reset a {
+    color: rgb(160,160,160);
+}
+
+.footer-top ul li p.reset a:hover {
+    color: rgb(235,235,235);
+}
+
+input[type=text] {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgb(80,80,80);
+    border: none;
+    outline: none;
+    color: white;
+    width: 72%;
+}
+
+input[type=submit] {
+    padding: 10px;
+    background: rgb(140,140,140);
+    border: none;
+    color: white;
+    width: 25%;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background: rgb(110,100,110);
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px solid #cccccc;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    color: rgb(160,160,160);
+}
+
+.footer-bottom p .span {
+    color: rgb(235,235,235);
+}
+
+.footer-bottom p a {
+    color: rgb(160,160,160);
+}
+
+.footer-bottom p a:hover {
+    color: rgb(235,235,235);
+}
+
+/* --- MEDIA KVERYS --- */
+
+@media(max-width: 1250px){
+    
+    .home {
+    height: 80vh;
+    }
+    
+    .slider {
+        height: 80vh;
+    }
+    
+    .mainbox {
+        max-width: 900px;
+    }
+    
+    .nav-container ul li {
+        padding-right: 15px;
+    }
+    
+    .home .home-middle {
+        margin: 0 10px;
+    }
+    
+/*
+    .home .home-middle .arrows a i.fa-6x {
+        font-size: 10px;
+    }
+*/
+    
+    .services .services-bottom li {
+        padding: 5px;
+    }
+    
+    .works {
+        height: auto;
+        margin-bottom: 0;
+    }
+    
+    .examples {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 0 30px 0;
+        border-bottom: none;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .examples li {
+        padding: 5px;
+    }
+    
+    .buy {
+        margin-top: 0;
+    }
+    
+    .footer-top ul li {
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 960px){
+    .home-middle .mission li:first-child {
+        font-size: 2.5rem;
+    }  
+    
+    .mainbox {
+        padding: 0 15px;
+    }
+    
+    .home {
+        height: 100vh;
+    }
+    
+    .slider {
+        height: 100vh;
+    }
+    
+    .home header .header-top {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .nav-container ul li {
+        padding-right: 15px;
+        padding-top: 20px;
+    }
+    
+/*
+    .home .home-middle .arrows a {
+    font-size: 4rem;
+    } 
+*/
+    
+    .footer-top .flex {
+        flex-wrap: wrap;
+    }
+    
+    .footer-top ul .width-wide {
+        flex: 0 0 100%;
+    }
+
+    .footer-top ul .width-normal {
+        flex: 0 0 28%;
+        padding-top: 0;
+    }
+    
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-bottom p {
+        padding: 5px;       
+    }  
+}
+
+@media(max-width: 700px) {
+    
+    .nav-container ul li {
+        font-size: 1rem;  
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    
+    .home .home-middle .arrows {
+        display: none;
+    }
+    
+    .services-bottom {
+        flex-wrap: wrap;    
+    }
+    
+    .footer-bottom p:last-child {
+        order: -1;
+    }
+    
+    .footer-top ul .width-normal {
+        flex: 1 0 50%;
+    }
+    
+    .footer-bottom p:first-child {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

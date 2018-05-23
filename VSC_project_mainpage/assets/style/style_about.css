@@ -1,0 +1,335 @@
+* {box-sizing: border-box}
+
+/*BENDRI DALYKAI*/
+
+html, body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.mainbox {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.box_sm {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p.aprasas {
+    line-height: 1.8;
+    color: #9b9999;
+}
+
+.social-icons {
+    align-self: center;
+}
+
+.social-icons a.darkness {
+    color: #666262;
+    padding-left: 10px;
+}
+
+.social-icons a:hover {
+    color: #00bbf5;
+}
+
+h2 {
+    padding: 30px 0;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666262;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.darkness {
+    color: #666262;
+}
+
+/*HOME REIKALAI - CKANT, PUSLAPIO VIRŠUS*/
+
+/*HEADER + NAV*/
+
+header.about .header-top {
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-container ul li a:hover {
+    color: #00bbf5;
+}
+
+header.about .nav-container {
+    justify-content: space-between;
+    color: color: #666262;
+    text-transform: uppercase;
+    padding: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-container ul li {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.nav-container ul li a.active {
+     color: #87b672;
+}
+
+.nav-container ul li a.active:hover {
+     color: #87b672;
+}
+
+.nav-container ul li a:hover {
+    color: #00bbf5;
+}
+
+.nav-container ul li a.dark {
+    color: #666262;
+}
+
+/*BREAK LINIJA*/
+
+.break {
+    background: linear-gradient(to right, rgb(44, 118, 126), rgb(18, 180, 115));
+}
+
+/*SERVISAI*/
+
+.services-top {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.services-bottom {
+    padding: 75px 0 60px;
+    border-top: 1px solid #cccccc;
+    justify-content: space-between;
+    color: #b9b7b7;
+}
+
+.services-bottom li {
+    text-align: center;
+}
+
+.services-bottom li h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #666262;
+    font-weight: 500;
+    padding: 30px 0;
+}
+
+.services-bottom li p:last-child {
+    margin-top: 30px;
+}
+
+.services-bottom li a {
+    color: #87b672;
+}
+
+.services-bottom li a:hover {
+    color: #00bbf5;
+}
+
+/*WORKS AND PURCHASE IF YOU LIKE*/
+
+.works {
+    height: 360px;
+    background: #efefef;
+    text-align: center;
+}
+
+.examples {
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 60px;
+    position: relative;
+    bottom: -30px;
+}
+
+.examples li h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #666262;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.buy {
+    margin-top: 130px;
+}
+
+.button {
+    margin: 40px 0 60px 0;
+}
+
+.button a {
+    padding: 15px 20px;
+    background: #87b672;;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.button a:hover {
+    background: #00bbf5;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: #333;
+}
+
+.footer-top {
+    color: rgb(160,160,160);
+}
+
+.footer-top ul {
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.footer-top ul .width-wide {
+    flex: 0 0 40%;
+    padding-top: 60px;
+}
+
+.footer-top ul .width-normal {
+    flex: 0 0 17%;
+}
+
+.footer-top ul li .flex {
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a.light {
+    padding-right: 10px;
+    color: rgba(255,255,255,0.8);
+}
+
+.social-icons a.light:hover {
+    color: #00bbf5;
+}
+
+.footer-top ul li p {
+    padding: 0 0 10px;
+    line-height: 1.8;
+}
+
+.footer-top ul li p span {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-top ul li h5 {
+    padding: 50px 0 20px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-top ul li p.reset {
+    padding: 0;
+}
+
+.footer-top ul li p.reset a {
+    color: rgb(160,160,160);
+}
+
+.footer-top ul li p.reset a:hover {
+    color: rgb(235,235,235);
+}
+
+input[type=text] {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgb(80,80,80);
+    border: none;
+    outline: none;
+    color: white;
+    width: 72%;
+}
+
+input[type=submit] {
+    padding: 10px;
+    background: rgb(140,140,140);
+    border: none;
+    color: white;
+    width: 25%;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background: rgb(110,100,110);
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px solid #cccccc;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    color: rgb(160,160,160);
+}
+
+.footer-bottom p .span {
+    color: rgb(235,235,235);
+}
+
+.footer-bottom p a {
+    color: rgb(160,160,160);
+}
+
+.footer-bottom p a:hover {
+    color: rgb(235,235,235);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

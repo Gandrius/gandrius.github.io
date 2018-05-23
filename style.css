@@ -13,7 +13,6 @@ ul {
     padding: 0;
     width: 220px;
     height: 450px;
-    /*border: solid 1px grey;*/
 }
 
 ul li {
@@ -65,132 +64,96 @@ ul li .bg {
 }
 
 ul li.item1 .bg {
-    background: url("images/img1.JPG");
+    background: url("images/deliver.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 ul li.item2 .bg {
-    background: url("images/img2.JPG");
+    background: url("images/css_grid_gallery.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 ul li.item3 .bg {
-    background: url("images/img3.JPG");
+    background: url("images/css_loader.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 ul li.item4 .bg {
-    background: url("images/img4.JPG");
+    background: url("images/flexbox_grid.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 ul li.item5 .bg {
-    background: url("images/img5.JPG");
+    background: url("images/br_architects.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 @media (min-width: 600px) {
     
-ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0;
-    width: 500px;
-    height: 500px;
-}
+    ul {
+        width: 500px;
+        height: 500px;
+    }
 
-ul li {
-    list-style: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: #000;
-    margin: 0px;
-    transform: rotate(45deg);
-    transition: .5s;
-    overflow: hidden;
-    opacity: .65;
-}
+    ul li {
+        width: 200px;
+        height: 200px;
+    }
 
-ul li.item1 {
-    top: 0;
-    left: 0;
-}
+    ul li.item2 {
+        bottom: 30%;
+        left: 30%;
+    }
 
-ul li.item2 {
-    bottom: 30%;
-    left: 30%;
-}
+    ul li.item3 {
+        top: 0;
+        right: 0;
+    }
 
-ul li.item3 {
-    top: 0;
-    right: 0;
-}
+    ul li.item4 {
+        bottom: 0;
+        left: 0;
+    }
 
-ul li.item4 {
-    bottom: 0;
-    left: 0;
-}
-
-ul li.item5 {
-    bottom: 0;
-     right: 0;
-}
+    ul li.item5 {
+        bottom: 0;
+        right: 0;
+    }
 }
 
 @media (min-width: 900px) {
     
-ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0;
-    width: 600px;
-    height: 150px;
-}
-    
-ul li {
-    list-style: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: #000;
-    margin: -100px;
-    transform: rotate(45deg);
-    transition: .5s;
-    overflow: hidden;
-    opacity: .65;
-}
+    ul {
+        width: 600px;
+        height: 150px;
+    }
+        
+    ul li {
+        margin: -100px;
+    }
 
-ul li.item1 {
-    top: 0;
-    left: 0;
-}
+    ul li.item1 {
+        top: 0;
+        left: 0;
+    }
 
-ul li.item2 {
-    bottom: 0;
-    left: 25%;
-}
+    ul li.item2 {
+        bottom: 0;
+        left: 25%;
+    }
 
-ul li.item3 {
-    top: 0;
-    left: 50%;
-}
+    ul li.item3 {
+        top: 0;
+        left: 50%;
+    }
 
-ul li.item4 {
-    bottom: 0;
-    left: 75%;
-}
+    ul li.item4 {
+        bottom: 0;
+        left: 75%;
+    }
 
-ul li.item5 {
-    top: 0;
-    left: 100%;
-}
+    ul li.item5 {
+        top: 0;
+        left: 100%;
+    }
 }
