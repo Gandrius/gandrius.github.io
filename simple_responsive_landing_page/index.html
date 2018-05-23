@@ -12,12 +12,12 @@
     <header>
         <div class="header-box mainbox">
             <div class="logo">
-                <p><a href="#home"><span class="br">BR</span> Architects</a></p>
+                <p><a href="#home" class="scroll"><span class="br">BR</span> Architects</a></p>
             </div>
             <ul class="nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="scroll">About</a></li>
+                <li><a href="#projects" class="scroll">Projects</a></li>
+                <li><a href="#contact" class="scroll">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -131,14 +131,29 @@
         </section>
     </main>
 
-   <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9225.121503638791!2d25.2147569!3d54.6870936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a67400411aa91f5!2sVilniaus+TV+bok%C5%A1tas!5e0!3m2!1slt!2slt!4v1527078765896"
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9225.121503638791!2d25.2147569!3d54.6870936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a67400411aa91f5!2sVilniaus+TV+bok%C5%A1tas!5e0!3m2!1slt!2slt!4v1527078765896"
         width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-   </div>
+    </div>
 
-   <footer>
-       <p class="footer">Idea by <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a></p>
-   </footer>
+    <footer>
+        <p class="footer">Idea by <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a></p>
+    </footer>
+
+    <script type="text/javascript" src="jquery/jquerry.3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            var scrollMove = $(".scroll");
+            
+            scrollMove.click(function(event) {
+                event.preventDefault();
+                $("body, html").animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1500);
+            })
+        })
+    </script>
    
 </body>
 </html>
