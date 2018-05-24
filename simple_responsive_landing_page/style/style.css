@@ -55,19 +55,24 @@ span.br {
 
 .nav li {
     display: inline;
-    padding: 15px 10px;
-    margin-left: -20px;
+    padding: 10px;
+    margin-left: -10px;
 }
 
 .nav li a {
     text-decoration: none;
     color: black;
-    padding: 10px 15px;
-    transition: all 1s;
+    padding: 10px;
+    /* transition: all .6s; */
 }
 
-.nav a:hover {
-    background: red;
+.nav li.active a {
+    color: tomato;
+    /* transition: 1s; */
+}
+
+.nav li:hover {
+    background: rgb(210, 210, 210);
 }
 
 /* HOME WITH BACKGROUND */
@@ -169,7 +174,7 @@ p.contact {
 }
 
 p.contact:hover {
-    background-color: rgb(255, 0, 0);
+    background: tomato;
 }
 
 /*PROJECTS*/
@@ -248,7 +253,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background: red;
+    background: tomato;
 }
 
 /*MAP*/
@@ -311,22 +316,26 @@ footer p a:hover {
 @media(max-width: 600px){
 
     header {
-        font-size: 1.2rem;
+        font-size: 1rem;
         letter-spacing: 1px;
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .nav {
+        margin-left: -30px;
+    }
+
+    .nav li {
+        padding: 5px;
+        margin: -5px;
     }
 
     .nav li a {
         padding: 0;
         font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-
-    .nav li a:hover {
-        color: red;
-        background: none;
     }
 
     p.title {

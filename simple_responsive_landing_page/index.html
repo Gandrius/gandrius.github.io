@@ -15,6 +15,7 @@
                 <p><a href="#home" class="scroll"><span class="br">BR</span> Architects</a></p>
             </div>
             <ul class="nav">
+                <li class="active"><a href="#home" class="scroll">Home</a></li>
                 <li><a href="#about" class="scroll">About</a></li>
                 <li><a href="#projects" class="scroll">Projects</a></li>
                 <li><a href="#contact" class="scroll">Contact</a></li>
@@ -146,11 +147,27 @@
             
             var scrollMove = $(".scroll");
             
+            // Smooth scolling            
             scrollMove.click(function(event) {
                 event.preventDefault();
                 $("body, html").animate({
                     scrollTop: $(this.hash).offset().top
                 }, 1500);
+            });
+
+            // Active menu item switch
+            $(window).scroll(function() {
+                var scrollBarLocation = $(this).scrollTop();
+
+                scrollMove.each(function() {
+
+                    var sectionOffset = $(this.hash).offset().top - 20;
+
+                    if (sectionOffset <= scrollBarLocation) {
+                        $(this).parent().addClass("active");
+                        $(this).parent().siblings().removeClass("active");
+                    }
+                })
             })
         })
     </script>
