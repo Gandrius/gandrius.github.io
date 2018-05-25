@@ -17,6 +17,7 @@ html, body {
 
 .home {
     height: 100vh;
+    overflow: hidden;
     background: black;
 }
 
@@ -54,9 +55,37 @@ html, body {
     font-weight: bold;
 }
 
+.random span:first-child {
+    animation: slider 16s infinite 10s;
+}
+.random span:nth-child(2) {
+    animation: slider 16s infinite 11.8s;
+}
+.random span:nth-child(3) {
+    animation: slider 16s infinite 13.6s;
+}
+.random span:nth-child(4) {
+    animation: slider 16s infinite 15.4s;
+}
+.random span:nth-child(5) {
+    animation: slider 16s infinite 17.2s;
+}
+.random span:nth-child(6) {
+    animation: slider 16s infinite 19s;
+}
+.random span:nth-child(7) {
+    animation: slider 16s infinite 20.8s;
+}
+.random span:nth-child(8) {
+    animation: slider 16s infinite 22.6s;
+}
+.random span:nth-child(9) {
+    animation: slider 16s infinite 24.4s;
+}
+
 h1.title {
     font-size: 2.5rem;
-    color: white;
+    color: red;
     font-family: 'Roboto Slab', serif;
     margin-top: 50px;
 }
@@ -125,27 +154,38 @@ h1.title {
 
 .examples li.item1 .bg {
     background: url("../images/deliver.jpg") no-repeat 50% 50%;
-    background-size: cover;
 }
 
 .examples li.item2 .bg {
     background: url("../images/css_grid_gallery.jpg") no-repeat 50% 50%;
-    background-size: cover;
 }
 
 .examples li.item3 .bg {
     background: url("../images/css_loader.jpg") no-repeat 50% 50%;
-    background-size: cover;
 }
 
 .examples li.item4 .bg {
     background: url("../images/flexbox_grid.jpg") no-repeat 50% 50%;
-    background-size: cover;
 }
 
 .examples li.item5 .bg {
     background: url("../images/br_architects.jpg") no-repeat 50% 50%;
-    background-size: cover;
+}
+
+/* ANIMACIJOS */
+
+@keyframes slider {
+    0% {
+        color: white;
+    }
+
+    10% {
+        color: red;
+    }
+
+    40% {
+        color: white;
+    }
 }
 
 /* MEDIA KVERYS */
