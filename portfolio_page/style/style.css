@@ -82,6 +82,44 @@ html, body {
 .random span:nth-child(9) {
     animation: slider 16s infinite 24.4s;
 }
+/* 
+.random span:first-child {
+    animation-name: slider-early;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.random span:nth-child(2) {
+    animation: slider-early 5s 5.5s;
+}
+
+.random span:nth-child(3) {
+    animation: slider-early 5s 1 6s;
+}
+
+.random span:nth-child(4) {
+    animation: slider-early 5s 1 6.5s;
+}
+
+.random span:nth-child(5) {
+    animation: slider-early 5s 1 7s;
+}
+
+.random span:nth-child(6) {
+    animation: slider-early 5s 1 7.5s;
+}
+
+.random span:nth-child(7) {
+    animation: slider-early 5s 1 8s;
+}
+
+.random span:nth-child(8) {
+    animation: slider-early 5s 1 8.5s;
+}
+
+.random span:nth-child(9) {
+    animation: slider-early 5s 1 9s;
+} */
 
 h1.title {
     font-size: 2.5rem;
@@ -154,25 +192,44 @@ h1.title {
 
 .examples li.item1 .bg {
     background: url("../images/deliver.jpg") no-repeat 50% 50%;
+    background-size: cover;
 }
 
 .examples li.item2 .bg {
     background: url("../images/css_grid_gallery.jpg") no-repeat 50% 50%;
+    background-size: cover;
 }
 
 .examples li.item3 .bg {
     background: url("../images/css_loader.jpg") no-repeat 50% 50%;
+    background-size: cover;
 }
 
 .examples li.item4 .bg {
     background: url("../images/flexbox_grid.jpg") no-repeat 50% 50%;
+    background-size: cover;
 }
 
 .examples li.item5 .bg {
     background: url("../images/br_architects.jpg") no-repeat 50% 50%;
+    background-size: cover;
 }
 
 /* ANIMACIJOS */
+
+@keyframes slider_early {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: black;
+    }
+
+    80% {
+        color: white;
+    }
+}
 
 @keyframes slider {
     0% {
