@@ -2,9 +2,6 @@
 
 html, body {
     font-size: 12px;
-    font-family: 'Roboto Slab';
-    font-weight: normal;
-    font-style: normal;
 }
 
 .mainbox {
@@ -22,30 +19,44 @@ html, body {
     height: 100vh;
     overflow: hidden;
     background: black;
+    font-family: 'Roboto Slab';
 }
 
-.header-box {
-    justify-content: space-between;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
     opacity: 0;
     animation: showYourSelf 5s 10s;
     animation-fill-mode: forwards;
     visibility: hidden;
+    z-index: 1;
+}
+
+.header-box {
+    justify-content: space-between;
+   
     padding: 30px 0;
 }
 
 .logo-box {
     color: white;
+    font-size: 1.2rem;
 }
 
 .nav li {
     display: inline;
     font-family: 'Roboto Slab';
-    padding-left: 10px;
 }
 
 .nav li a {
     text-decoration: none;
     color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .content {
@@ -56,56 +67,50 @@ html, body {
 }
 
 .random {
-    margin-top: -150px;
+    margin-top: -100px;
     font-family: 'Orbitron';
     text-transform: uppercase;
     color: white;
     letter-spacing: 5px;
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .random span:first-child {
-    animation: slider 16s infinite 10s;
+    animation: slider 6s infinite 13s;
 }
 .random span:nth-child(2) {
-    animation: slider 16s infinite 11.8s;
+    animation: slider 6s infinite 14.8s;
 }
 .random span:nth-child(3) {
-    animation: slider 16s infinite 13.6s;
+    animation: slider 6s infinite 16.6s;
 }
 .random span:nth-child(4) {
-    animation: slider 16s infinite 15.4s;
+    animation: slider 6s infinite 18.4s;
 }
 .random span:nth-child(5) {
-    animation: slider 16s infinite 17.2s;
+    animation: slider 6s infinite 20.2s;
 }
 .random span:nth-child(6) {
-    animation: slider 16s infinite 19s;
+    animation: slider 6s infinite 22s;
 }
 .random span:nth-child(7) {
-    animation: slider 16s infinite 20.8s;
+    animation: slider 6s infinite 23.8s;
 }
-/* .random span:nth-child(8) {
-    animation: slider 16s infinite 22.6s;
-} */
+.random span:nth-child(8) {
+    animation: slider 16s infinite 25.6s;
+}
 .random span:nth-child(9) {
-    animation: slider 16s infinite 24.4s;
-}
-
-.random span .early {
-    animation-name: slider-early;
-    animation-duration: 5s;
-    animation-delay: 5s;
+    animation: slider 6s infinite 27.4s;
 }
 
 h1.title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     opacity: 0;
     color: red;
     font-family: 'Roboto Slab', serif;
     margin-top: 50px;
-    animation: showYourSelf 5s 6s;
+    animation: showYourSelf 5s 7s;
     animation-fill-mode: forwards;
     visibility: hidden;
 }
