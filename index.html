@@ -12,29 +12,29 @@
 </head>
 
 <body>
-    <section class="home" id="home">
+    <section class="home scroll" id="home">
         <header class="header">
             <div class="header-box mainbox flex">
                 <div class="logo-box">
                     LOGO
                 </div>
                 <ul class="nav">
-                    <li>
-                        <a href="">Home</a>
+                    <li class="active">
+                        <a href="#home" class="scroll">Home</a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="#about" class="scroll">About</a>
                     </li>
                     <li>
-                        <a href="">Portfolio</a>
+                        <a href="#portfolio" class="scroll">Portfolio</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#contact" class="scroll">Contact</a>
                     </li>
                 </ul>
             </div>
         </header>
-        <div class="content flex">
+        <div class="content flex" id="home">
             <div class="random mainbox flex">
                 <span class="nbr ltr">0</span>
                 <span class="nbr ltr">0</span>
@@ -50,7 +50,10 @@
         </div>
 
     </section>
-    <section class="portfolio">
+    <section class="about" id="about">
+
+    </section>
+    <section class="portfolio" id="portfolio">
         <ul class="examples">
             <li class="item1">
                 <a href="VSC_project_mainpage/index.html">
@@ -89,9 +92,12 @@
             </li>
         </ul>
     </section>
+    <section class="contact" id="contact">
+
+    </section>
 
     <script type="text/javascript" src="../resursai/jquery/jquerry.3.3.1.min.js"></script>
     <script type="text/javascript" src="portfolio_page/js/random.js"></script>
-
+    <script type="text/javascript" src="portfolio_page/js/smooth_scroll.js"></script>
 </body>
 </html>

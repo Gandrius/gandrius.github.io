@@ -17,7 +17,7 @@ html, body {
 
 .home {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: black;
     font-family: 'Roboto Slab';
 }
@@ -29,21 +29,21 @@ html, body {
     right: 0;
     background: rgba(0, 0, 0, .5);
     opacity: 0;
-    animation: showYourSelf 5s 10s;
+    animation: showYourSelf 5s 9s;
     animation-fill-mode: forwards;
-    visibility: hidden;
+    /* visibility: hidden; */
     z-index: 1;
 }
 
 .header-box {
     justify-content: space-between;
-   
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .logo-box {
     color: white;
     font-size: 1.2rem;
+    padding-left: 15px;
 }
 
 .nav li {
@@ -57,6 +57,16 @@ html, body {
     padding: 10px 15px;
     text-transform: uppercase;
     font-size: 1rem;
+    transition: .5s;
+}
+
+.nav li a:hover {
+    color: rgb(175, 175, 175);
+}
+
+.nav li.active a {
+    color: red;
+    font-weight: bold;
 }
 
 .content {
@@ -110,9 +120,16 @@ h1.title {
     color: red;
     font-family: 'Roboto Slab', serif;
     margin-top: 50px;
-    animation: showYourSelf 5s 7s;
+    animation: showYourSelf 5s 6s;
     animation-fill-mode: forwards;
     visibility: hidden;
+}
+
+/* APLINK MANE */
+
+.about {
+    height: 100vh;
+    background: lightgrey;
 }
 
 /* DARBŲ SEKCIJA */
@@ -200,6 +217,13 @@ h1.title {
 .examples li.item5 .bg {
     background: url("../images/br_architects.jpg") no-repeat 50% 50%;
     background-size: cover;
+}
+
+/* KONTAKTŲ REIKALAI */
+
+.contact {
+    height: 100vh;
+    background: black;
 }
 
 /* ANIMACIJOS */
