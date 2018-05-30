@@ -8,15 +8,16 @@
     <link type="text/css" rel="stylesheet" href="../resursai/reset.css">
     <link type="text/css" rel="stylesheet" href="portfolio_page/style/generated-fonts/fonts.css">
     <link type="text/css" rel="stylesheet" href="portfolio_page/style/style.css">
+    <link rel="stylesheet" href="portfolio_page/style/font_awesome/css/fontawesome-all.min.css">
     
 </head>
 
 <body>
-    <section class="home scroll" id="home">
+    <section class="home" id="home">
         <header class="header">
             <div class="header-box mainbox flex">
                 <div class="logo-box">
-                    LOGO
+                    <a href="#home" class="scroll">LOGO</a>
                 </div>
                 <ul class="nav">
                     <li class="active">
@@ -32,7 +33,22 @@
                         <a href="#contact" class="scroll">Contact</a>
                     </li>
                 </ul>
+                <ul class="nav-secret">
+                    <li>
+                        <a href="#home" class="scroll">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="scroll">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="scroll">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="scroll">Contact</a>
+                    </li>
+                </ul>
             </div>
+        
         </header>
         <div class="content flex" id="home">
             <div class="random mainbox flex">
@@ -47,6 +63,9 @@
                 <span class="nbr ltr">0</span>
             </div>
             <h1 class="title">Web Developer</h1>
+        </div>
+        <div class="icon-box">
+            <a href="#about" class="scroll"><i class="fas fa-arrow-down"></i></a>
         </div>
 
     </section>
@@ -99,5 +118,13 @@
     <script type="text/javascript" src="../resursai/jquery/jquerry.3.3.1.min.js"></script>
     <script type="text/javascript" src="portfolio_page/js/random.js"></script>
     <script type="text/javascript" src="portfolio_page/js/smooth_scroll.js"></script>
+    <script>
+        $("#toggle").click(function () {
+
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+
+        });
+    </script>
 </body>
 </html>

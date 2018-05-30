@@ -13,6 +13,11 @@ html, body {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* HOME SEKCIJA */
 
 .home {
@@ -20,6 +25,7 @@ html, body {
     /* overflow: hidden; */
     background: black;
     font-family: 'Roboto Slab';
+    position: relative;
 }
 
 .header {
@@ -29,34 +35,41 @@ html, body {
     right: 0;
     background: rgba(0, 0, 0, .5);
     opacity: 0;
-    animation: showYourSelf 5s 9s;
+    animation: showYourSelf 3s 6s;
     animation-fill-mode: forwards;
-    /* visibility: hidden; */
+    visibility: hidden;
     z-index: 1;
 }
 
 .header-box {
     justify-content: space-between;
     padding: 20px 0;
+    font-family: 'Roboto Slab';
+    font-size: 1.2rem;
 }
 
 .logo-box {
     color: white;
-    font-size: 1.2rem;
     padding-left: 15px;
+}
+
+.logo-box a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.nav-secret {
+    display: none;
 }
 
 .nav li {
     display: inline;
-    font-family: 'Roboto Slab';
+    /* font-family: 'Roboto Slab'; */
 }
 
 .nav li a {
-    text-decoration: none;
-    color: white;
     padding: 10px 15px;
     text-transform: uppercase;
-    font-size: 1rem;
     transition: .5s;
 }
 
@@ -90,28 +103,28 @@ html, body {
     animation: slider 6s infinite 13s;
 }
 .random span:nth-child(2) {
-    animation: slider 6s infinite 14.8s;
+    animation: slider 5s infinite 14.8s;
 }
 .random span:nth-child(3) {
-    animation: slider 6s infinite 16.6s;
+    animation: slider 4s infinite 16.6s;
 }
 .random span:nth-child(4) {
-    animation: slider 6s infinite 18.4s;
+    animation: slider 4s infinite 18.4s;
 }
 .random span:nth-child(5) {
-    animation: slider 6s infinite 20.2s;
+    animation: slider 5s infinite 20.2s;
 }
 .random span:nth-child(6) {
     animation: slider 6s infinite 22s;
 }
 .random span:nth-child(7) {
-    animation: slider 6s infinite 23.8s;
+    animation: slider 5s infinite 23.8s;
 }
 .random span:nth-child(8) {
-    animation: slider 16s infinite 25.6s;
+    animation: slider 6s infinite 25.6s;
 }
 .random span:nth-child(9) {
-    animation: slider 6s infinite 27.4s;
+    animation: slider 4s infinite 27.4s;
 }
 
 h1.title {
@@ -120,9 +133,18 @@ h1.title {
     color: red;
     font-family: 'Roboto Slab', serif;
     margin-top: 50px;
-    animation: showYourSelf 5s 6s;
+    animation: showYourSelf 3s 5s;
     animation-fill-mode: forwards;
     visibility: hidden;
+}
+
+.icon-box {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
 }
 
 /* APLINK MANE */

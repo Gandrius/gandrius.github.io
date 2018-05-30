@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+$(document).ready(function () {
 
     var scrollMove = $(".scroll");
 
@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
 
         scrollMove.each(function () {
 
-            var sectionOffset = $(this.hash).offset() - 20;
+            var sectionOffset = $(this.hash).offset().top - 20;
 
             if (sectionOffset <= scrollBarLocation) {
                 $(this).parent().addClass("active");
