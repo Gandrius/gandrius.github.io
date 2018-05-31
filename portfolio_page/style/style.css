@@ -2,6 +2,7 @@
 
 html, body {
     font-size: 12px;
+    min-width: 300px;
 }
 
 .mainbox {
@@ -44,7 +45,8 @@ a {
     justify-content: space-between;
     padding: 20px 0;
     font-family: 'Roboto Slab';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    position: relative;
 }
 
 .logo-box {
@@ -57,8 +59,27 @@ a {
     text-transform: uppercase;
 }
 
-.nav-secret {
+.secret {
     display: none;
+    position: absolute;
+    right: 15px;
+}
+
+.secret:hover {
+    cursor: pointer;
+}
+
+.secret span {
+    display: block;
+    margin-bottom: 6px;
+    width: 40px;
+    height: 3px;
+    background: white;
+    transition: .5s;
+}
+
+.secret:hover span {
+    background: red;
 }
 
 .nav li {
@@ -99,31 +120,32 @@ a {
 }
 
 .random span:first-child {
-    animation: slider 6s infinite 13s;
+    animation: slider 6s infinite 9s;
 }
 .random span:nth-child(2) {
-    animation: slider 5s infinite 14.8s;
+    animation: slider 5s infinite 10.5s;
 }
 .random span:nth-child(3) {
-    animation: slider 4s infinite 16.6s;
+    animation: slider 4s infinite 11s;
 }
 .random span:nth-child(4) {
-    animation: slider 4s infinite 18.4s;
+    animation: slider 4.5s infinite 12.5s;
 }
 .random span:nth-child(5) {
-    animation: slider 5s infinite 20.2s;
+    animation: slider 5s infinite 14s;
 }
 .random span:nth-child(6) {
-    animation: slider 6s infinite 22s;
+    animation: slider 6s infinite 15.5s;
 }
 .random span:nth-child(7) {
-    animation: slider 5s infinite 23.8s;
+    animation: slider 5s infinite 17s;
 }
 .random span:nth-child(8) {
-    animation: slider 6s infinite 25.6s;
+    animation: ghost 2s 3s;
+    animation-fill-mode: forwards;
 }
 .random span:nth-child(9) {
-    animation: slider 4s infinite 27.4s;
+    animation: slider 4s infinite 18.5s;
 }
 
 h1.title {
@@ -154,6 +176,7 @@ h1.title {
 }
 
 .icon-box a:hover {
+    display:inline-block;
     animation: arrowHover 1s infinite;
 }
 
@@ -291,7 +314,7 @@ h1.title {
 
 @keyframes arrowHover {
     0% {
-        color: white;
+        transform: translateY(0px);
     }
     50% {
         color: red;
@@ -317,6 +340,17 @@ h1.title {
     }
 }
 
+@keyframes ghost {
+    0% {
+        visibility: hidden;
+        opacity: 1;
+    }
+    100% {
+        visibility: visible;
+        opacity: 0;
+    }
+}
+
 /* MEDIA KVERYS */
 
 @media (max-width: 900px) {
@@ -329,7 +363,6 @@ h1.title {
     .examples li {
         width: 200px;
         height: 200px;
-       
     }
 
     .examples li.item1 {
@@ -360,15 +393,50 @@ h1.title {
 
 @media (max-width: 600px) {
 
+    .header-box {
+        flex-wrap: wrap;
+        padding: 20px 0 0;
+    }
+
+    .logo-box {
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+    }
+
+    .secret {
+        display: block;
+    }
+
+    .header-box .show {
+        display: block;
+    }
+
+    .nav li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        background: rgba(240,240,240,0.3);
+    }
+
     .random {
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         font-size: 2.5rem;
-        font-weight: bold;
+        margin-top: 0;
     }
 
     h1.title {
         font-size: 1.5rem;
         margin-top: 50px;
+    }
+
+    .icon-box {
+        bottom: 30px;
     }
 
     .examples {
