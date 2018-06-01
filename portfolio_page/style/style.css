@@ -62,7 +62,7 @@ a {
 .secret {
     display: none;
     position: absolute;
-    right: 15px;
+    right: 30px;
 }
 
 .secret:hover {
@@ -84,7 +84,6 @@ a {
 
 .nav li {
     display: inline;
-    /* font-family: 'Roboto Slab'; */
 }
 
 .nav li a {
@@ -185,6 +184,13 @@ h1.title {
 .about {
     height: 100vh;
     background: lightgrey;
+    justify-content: center;
+    align-items: center;
+}
+
+.repair {
+    font-size: 2rem;
+    color: red;
 }
 
 /* DARBŲ SEKCIJA */
@@ -192,8 +198,9 @@ h1.title {
 .portfolio {
     height: 100vh;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    font-family: 'Roboto Slab';
 }
 
 .examples {
@@ -249,6 +256,32 @@ h1.title {
     transform: rotate(-45deg) scale(1.42);
 }
 
+.aprasas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.cont {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    background: black;
+    transform: scale(1.42);
+    opacity: 0;
+    font-size: .8rem;
+}
+
+.cont:hover {
+    opacity: .8;
+}
+
 .examples li.item1 .bg {
     background: url("../images/deliver.jpg") no-repeat 50% 50%;
     background-size: cover;
@@ -279,6 +312,8 @@ h1.title {
 .contact {
     height: 100vh;
     background: black;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ANIMACIJOS */
@@ -352,6 +387,17 @@ h1.title {
 }
 
 /* MEDIA KVERYS */
+
+@media (max-width: 1320px) {
+    .mainbox {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo-box {
+        padding-left: 0;
+    }
+}
 
 @media (max-width: 900px) {
 
@@ -448,6 +494,10 @@ h1.title {
         width: 110px;
         height: 110px;
         margin: -50px;
+    }
+
+    .aprasas .cont p{
+        font-size: 0.5rem;
     }
 
     .examples li.item1 {
