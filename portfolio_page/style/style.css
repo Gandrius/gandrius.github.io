@@ -50,13 +50,17 @@ a {
 }
 
 .logo-box {
-    color: white;
     padding-left: 15px;
 }
 
 .logo-box a {
     padding: 10px 15px;
     text-transform: uppercase;
+    transition: .5s;
+}
+
+.logo-box a:hover {
+    color: red;
 }
 
 .secret {
@@ -93,12 +97,11 @@ a {
 }
 
 .nav li a:hover {
-    color: rgb(175, 175, 175);
+    color: red;
 }
 
 .nav li.active a {
-    color: red;
-    font-weight: bold;
+    color: orangered;
 }
 
 .content {

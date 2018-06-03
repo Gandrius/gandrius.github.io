@@ -11,12 +11,20 @@
 
 <body>
     <div class="wrapper">
-        <nav class="main-nav">
+        <nav class="main-nav" id="home">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Apie</a></li>
-                <li><a href="">Foto</a></li>
-                <li><a href="">Klausk</a></li>
+                <li>
+                    <a href="#home" class="scroll">Home</a>
+                </li>
+                <li>
+                    <a href="#services" class="scroll">Services</a>
+                </li>
+                <li>
+                    <a href="#pool" class="scroll">Water Pool</a>
+                </li>
+                <li>
+                    <a href="#photos" class="scroll">Photos</a>
+                </li>
             </ul>
         </nav>
         
@@ -38,7 +46,7 @@
             </div>
         </section>
         
-        <section class="boxes">
+        <section class="boxes" id="services">
             <div class="box box1">
                 <i class="fab fa-instagram fa-4x"></i>
                 <h3>Paslauga 1</h3>
@@ -61,16 +69,16 @@
             </div>
         </section>
         
-        <section class="info">
+        <section class="info" id="pool">
             <img src="images/photo1.jpg" alt="alternatyva">
             <div>
-                <h2>Pasaulis Tavo rankose</h2>
+                <h2>Pavadink Pavadinimą</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <a href="#" class="btn">Ar norėtum?</a>
+                <a href="#" class="btn">Daugiau</a>
             </div>
         </section>
         
-        <section class="portfolio">
+        <section class="portfolio" id="photos">
             <img src="https://source.unsplash.com/random/200x200" alt="tikimybės">
              <img src="https://source.unsplash.com/random/201x200" alt="tikimybės">
              <img src="https://source.unsplash.com/random/200x201" alt="tikimybės">
@@ -82,10 +90,61 @@
         </section>        
         
         <footer>
-            <p>Apsaugota įstatymų &copy; 2018</p>
+            <p>Apsauga nuo įstatymų &copy; 2018</p>
         </footer>
-        
-    </div>
     
+    <!-- Į VIRŠŲ -->
+    <a class="scrollup">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    </div>
+
+    <script type="text/javascript" src="../resursai/jquery/jquerry.3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () { 
+            var scrollMove = $(".scroll"); 
+            
+            // Smooth scrolling 
+            
+            scrollMove.click(function (event) { 
+                event.preventDefault();
+                $("body, html").animate({ 
+                    scrollTop: $(this.hash).offset().top
+                }, 1500);
+            }); 
+                
+            // Active menu item switch
+            
+            $(window).scroll(function() { 
+                var scrollBarLocation = $(this).scrollTop();
+                
+                scrollMove.each(function () { 
+                    
+                    var sectionOffset = $(this.hash).offset().top; 
+                    
+                    if (sectionOffset <= scrollBarLocation) { 
+                        $(this).parent().addClass( "active"); 
+                        $(this).parent().siblings().removeClass("active"); 
+                    } 
+                }) 
+            })
+
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 250) { 
+                    $('.scrollup').fadeIn(300);
+                } else { 
+                    $('.scrollup').fadeOut(300);
+                } 
+            }); 
+            
+            //On click scroll to top of page t = 1000ms 
+            
+            $('.scrollup').click(function(){ 
+                $("html, body").animate({ scrollTop: 0}, 1000); 
+                return false;
+                });
+            })
+    </script>
 </body>
 </html>

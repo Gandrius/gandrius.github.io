@@ -25,6 +25,11 @@ body {
     padding: 0.6rem 1.3rem;
     text-decoration: none;
     border: 0;
+    transition: all .7s;
+}
+
+.btn:hover {
+    background-color: var(--tomato);
 }
 
 img {
@@ -34,6 +39,32 @@ img {
 .wrapper {
     display: grid;
     grid-gap: 20px;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: 2px solid var(--tomato);
+    border-radius: 15px;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    background: var(--dark);
+    color: var(--light);
+    font-weight: bold;
+    transition: .7s;
+}
+
+.scrollup:hover {
+    background: var(--primary);
+    color: var(--tomato);
+}
+
+.scrollup i {
+    padding-top: 10px;
 }
 
 /*Navigacija*/
@@ -56,6 +87,7 @@ img {
     text-transform: uppercase;
     font-size: 1.1rem;
     box-shadow: var(--shadow);
+    transition: all .7s;
 }
 
 .main-nav a:hover {
