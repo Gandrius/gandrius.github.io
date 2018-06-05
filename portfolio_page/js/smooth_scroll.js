@@ -8,6 +8,7 @@ $(document).ready(function () {
         $("body, html").animate({
             scrollTop: $(this.hash).offset().top
         }, 1500);
+        $("ul.nav").toggleClass("show");
     });
 
     // Active menu item switch
@@ -16,7 +17,7 @@ $(document).ready(function () {
 
         scrollMove.each(function () {
 
-            var sectionOffset = $(this.hash).offset().top;
+            var sectionOffset = $(this.hash).offset().top - 10;
 
             if (sectionOffset <= scrollBarLocation) {
                 $(this).parent().addClass("active");
