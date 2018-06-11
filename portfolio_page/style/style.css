@@ -19,6 +19,27 @@ a {
     color: white;
 }
 
+.section-box {
+    border-bottom: 1px solid rgb(150, 150, 150);
+    margin-bottom: 20px;
+}
+
+.section-header {
+    justify-content: center;
+}
+
+.mid-title {
+    display: inline-block;
+    text-align: center;
+    margin: 70px 0 20px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 2rem;
+    border-top: 2px solid rgb(16, 34, 61);
+    border-bottom: 2px solid rgb(16, 34, 61);
+}
+
 /* HOME SEKCIJA */
 
 .home {
@@ -43,7 +64,7 @@ a {
 
 .header-box {
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 15px 0;
     font-family: 'Roboto Slab';
     font-size: 1.1rem;
     position: relative;
@@ -185,10 +206,10 @@ h1.title {
 /* APLINK MANE */
 
 .about {
-    height: 100vh;
-    background: lightgrey;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Roboto Slab';
+    background: white;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .repair {
@@ -199,9 +220,9 @@ h1.title {
 /* DARBŲ SEKCIJA */
 
 .portfolio {
-    /* height: 100vh; */
     position: relative;
     font-family: 'Roboto Slab';
+    background: white;
 }
 
 .p-box {
@@ -209,13 +230,12 @@ h1.title {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 80px 0;
-    transition: all .6s;
+    padding: 20px 0;
 }
 
 .p-item {
     width: 310px;
-    margin: 10px 10px 30px;
+    margin: 10px 10px 20px;
     border: 1px solid lightgrey;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
     transition: all .6s;
@@ -281,14 +301,13 @@ h1.title {
 
 .p-item:hover .techs li {
     background: linear-gradient(to bottom right, rgb(255, 166, 1), rgb(255, 160, 18));
-    transition: all .6s;
 }
 
 /* KONTAKTŲ REIKALAI */
 
 .contact {
     height: 100vh;
-    background: black;
+    background: white;
     justify-content: center;
     align-items: center;
 }
