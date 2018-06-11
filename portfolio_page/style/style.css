@@ -242,6 +242,10 @@ h1.title {
     font-weight: 600;
 }
 
+.p-item:hover h3 {
+    color: orangered;
+}
+
 .p-item .lfix {
     padding: 16px 10px;
 }
@@ -273,6 +277,11 @@ h1.title {
     background: rgb(0, 197, 138);
     background: linear-gradient(to bottom right, rgb(78, 199, 255), rgb(159, 211, 253));
     border-radius: 3px;
+}
+
+.p-item:hover .techs li {
+    background: linear-gradient(to bottom right, rgb(255, 166, 1), rgb(255, 160, 18));
+    transition: all .6s;
 }
 
 /* KONTAKTŲ REIKALAI */
