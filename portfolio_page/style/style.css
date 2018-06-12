@@ -20,8 +20,10 @@ a {
 }
 
 .section-box {
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding-bottom: 30px;
     margin-bottom: 20px;
+    
 }
 
 .section-header {
@@ -31,7 +33,7 @@ a {
 .mid-title {
     display: inline-block;
     text-align: center;
-    margin: 70px 0 20px;
+    margin: 70px 0 40px;
     padding: 20px 30px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -220,7 +222,7 @@ h1.title {
 .skills-box img {
     width: 75px;
     height: 75px;
-    margin: 20px;
+    margin: 25px;
     transition: all .6s;
 }
 
@@ -417,8 +419,8 @@ h1.title {
 
 @media (max-width: 900px) {
 
-    .portfolio {
-        height: auto;
+    .skills-box img {
+        margin: 20px;
     }
 }
 
@@ -471,7 +473,21 @@ h1.title {
         margin-top: 50px;
     }
 
+    .mid-title {
+        margin: 70px 0 30px;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-size: 1.5rem;
+        border-top: 2px solid rgb(16, 34, 61);
+        border-bottom: 2px solid rgb(16, 34, 61);
+    }
+
     .icon-box {
         bottom: 30px;
+    }
+
+    .skills-box img {
+        margin: 10px;
     }
 }
