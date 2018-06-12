@@ -7,7 +7,7 @@ html, body {
 
 .mainbox {
     max-width: 1350px;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 .flex {
@@ -64,7 +64,7 @@ a {
 
 .header-box {
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 20px 0;
     font-family: 'Roboto Slab';
     font-size: 1.1rem;
     position: relative;
@@ -208,14 +208,30 @@ h1.title {
 .about {
     font-family: 'Roboto Slab';
     background: white;
-    /* justify-content: center;
-    align-items: center; */
 }
 
-.repair {
-    font-size: 2rem;
-    color: rgb(150, 0, 0);
+.skills-box {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    backface-visibility: hidden;
 }
+
+.skills-box img {
+    width: 75px;
+    height: 75px;
+    margin: 20px;
+    transition: all .6s;
+}
+
+.skills-box img:hover {
+    transform: translateY(-10px);
+}
+
+.skills-box img.sass {
+    width: 100px;
+}
+
 
 /* DARBŲ SEKCIJA */
 
@@ -239,10 +255,14 @@ h1.title {
     border: 1px solid lightgrey;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
     transition: all .6s;
+
+    /* backface-visibility: hidden; */
+
 }
 
 .p-item:hover {
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, .5);
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, .5);
+    transform: translateY(-10px);
 }
 
 .p-img-box {

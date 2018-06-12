@@ -25,4 +25,8 @@ $(document).ready(function () {
             }
         })
     })
+
+    $(".secret").on("click", function () {
+        $('.nav').toggleClass("show");
+    });
 })
