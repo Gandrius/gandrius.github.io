@@ -1,0 +1,35 @@
+.home {
+    position: relative;
+    height: 100vh;
+}
+
+
+.slider {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin: 0 auto; */
+    z-index: -1;
+}
+
+.slider div {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.slide1 {
+    background: url(../images/1.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide2 {
+    background: url(../images/2.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide3 {
+    background: url(../images/3.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
