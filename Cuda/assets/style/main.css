@@ -45,6 +45,7 @@ a {
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .line-box {
@@ -230,4 +231,29 @@ a {
 .portfolio {
     background: #ffdd99;
     color: #3c4761;
+}
+
+
+@media (max-width: 900px) {
+
+    .single-service,
+    .team-member,
+    .single-skill {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+
+    .section-box {
+        padding: 60px 15px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .single-service,
+    .team-member,
+    .single-skill {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
