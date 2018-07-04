@@ -80,7 +80,7 @@ a {
 
 .nav a i {
     color: #46c7ab;
-    padding: 0 10px 0 20px;
+    padding: 0 7px 0 20px;
     transition: all .6s;
 }
 
@@ -94,7 +94,7 @@ a {
 }
 
 .login-box a:hover {
-    color: #afafaf;
+    color: #319680;
 }
 
 /* .dropdown {
@@ -150,10 +150,84 @@ a {
     background-size: cover;
 }
 
+/* ABOUT SECTION */
+
+.about {
+    /* height: 600px; */
+    position: relative;
+    color: #4f616e;
+    font-size: 1.2rem;
+}
+
+.secret-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1000px;
+    z-index: -1;
+}
+
+.about-content {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-item {
+    width: 40%;
+}
+
+.about-item h2 {
+    color: #46c7ab;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.about-item p {
+    line-height: 1.3;
+    padding: 15px 0;
+}
+
+.about-button {
+    display: inline-block;
+    background: #46c7ab;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    width: 90%;
+    border-radius: 5px;
+    transition: all .6s;
+    margin-top: 20px;
+}
+
+.about-button:hover {
+    background: #319680;
+}
+
+.about-item h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #46c7ab;
+    margin-bottom: 10px;
+}
+
+.about-item .read-more {
+    color: #46c7ab;
+    text-decoration: underline;
+}
+
+.about-item .read-more:hover {
+    color: #319680;
+}
+
 /* CARS SECTION */
 
 .cars {
-    background: #fbfbfb;
+    background: #f9f9f9;
 }
 
 .cars-items {
@@ -313,7 +387,7 @@ footer {
 }
 
 .footer-item .contacts a:hover {
-    color: #afafaf;
+    color: #319680;
 }
 
 .footer-item .social-icons i {
@@ -323,7 +397,7 @@ footer {
 }
 
 .footer-item .social-icons i:hover {
-    color: #46c7ab;
+    color: #319680;
 }
 
 .bottom-menu li {
@@ -375,6 +449,10 @@ footer {
         display: none;
     }
 
+    .secret-image {
+        max-width: 100%;
+    }
+
     .single-item {
         margin: 25px;
     }
@@ -389,6 +467,10 @@ footer {
 }
 
 @media(max-width: 765px) {
+
+    .secret-image {
+        top: 10%;
+    }
 
     .cars-items {
         justify-content: center;
@@ -408,6 +490,41 @@ footer {
 }
 
 @media(max-width: 500px) {
+
+    .secret-image {
+        display: none;
+    }
+
+    .about-item {
+        width: 100%;
+    }
+
+    .about-content {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .about-item h2 {
+        font-size: 2.5rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .about-item p {
+        line-height: 1.3;
+        padding: 15px 0;
+    }
+
+    .about-button {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 1.4rem;
+    }
+
+    .about-item h5 {
+        text-align: center;
+    }
 
     .cars-header {
         padding-top: 30px;
