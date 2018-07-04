@@ -1,0 +1,419 @@
+* {box-sizing: border-box}
+
+/* SPALVOS
+
+color="#46c7ab" - žalioji
+color="#fbfbfb" - auto sekcija bg
+color="#cecece" - pilka2
+color="#4f616e" - pilka1
+
+*/
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    min-width: 300px;
+}
+
+.mainbox {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #4f616e;
+}
+
+/* HEADER */
+
+.header-box {
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.logo-box {
+    color: #46c7ab;
+    font-size: 1.5rem;
+}
+
+.nav {
+    margin-left: 100px;
+}
+
+.nav .active {
+    border-top: solid 5px #46c7ab;
+    box-shadow: 12px 0 30px -4px rgba(243, 243, 243, 0.8),
+    -12px 0 30px -4px rgba(243, 243, 243, 0.8);
+}
+
+.nav .active:hover {
+    color: #4f616e;
+    background: white;
+}
+
+.nav a {
+    color: #4f616e;
+    padding: 20px 10px;
+    transition: all .6s;
+}
+
+.nav a li,
+.login-box a li {
+    display: inline-block;
+}
+
+.nav a:hover {
+    background: #46c7ab;
+    color: white;
+}
+
+.nav a i {
+    color: #46c7ab;
+    padding: 0 10px 0 20px;
+    transition: all .6s;
+}
+
+.nav a:hover i {
+    color: white;
+}
+
+.login-box a {
+    color: #46c7ab;
+    padding: 20px 10px;
+}
+
+.login-box a:hover {
+    color: #afafaf;
+}
+
+/* .dropdown {
+    position: relative;
+} */
+
+/* .dropbtn {
+    display: inline-block;
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+} */
+
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: inline;
+} */
+
+/* HOME */
+
+.home {
+    height: 90vh;
+    background: url(../images/background1.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* CARS SECTION */
+
+.cars {
+    background: #fbfbfb;
+}
+
+.cars-items {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cars-header {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cars-header h3 {
+    color: #46c7ab;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.cars-header a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #aeaeae;
+}
+
+.cars-header a:hover {
+    color: #46c7ab;
+}
+
+.single-item {
+    position: relative;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgb(207, 207, 207);
+    margin-bottom: 75px;
+}
+
+.hidden-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(63, 73, 99, 0.6);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all .6s;
+}
+
+.hidden-link p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hidden-link:hover {
+    opacity: 1;
+}
+
+.single-item .image-box {
+    width: 340px;
+}
+
+.image-box img {
+    width: 100%;
+}
+
+.details {
+    width: 100%;
+    border-top: solid 1px rgb(228, 228, 228);
+    border-bottom: solid 1px rgb(228, 228, 228);
+    color: #4f616e;
+}
+
+.details p {
+    padding: 10px 0;
+    text-align: center;
+    display: inline-block;
+    width: 32%;
+}
+
+.details p:nth-child(2) {
+    border-left: solid 1px rgb(228, 228, 228);
+    border-right: solid 1px rgb(228, 228, 228);
+}
+
+.car-title {
+    text-align: center;
+    color: #4f616e;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+.single-item .price {
+    color: #46c7ab;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.single-item .price p {
+    display: inline-block;
+}
+
+.single-item .price .euro {
+    font-size: 1.8rem;
+}
+
+.single-item .price .cent {
+    font-size: 1.3rem;
+    margin-left: -3px;
+}
+
+.single-item .price .cent span {
+    margin-left: 10px;;
+}
+
+/* FOOTER */
+
+footer {
+    color: #afafaf;
+    font-size: 1.1rem;
+}
+
+.footer-top {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    width: 15%;
+}
+
+.footer-item h4 {
+    color: #46c7ab;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.footer-item h4 span {
+    color: white;
+    font-size: .1rem;
+}
+
+.footer-item .contacts {
+    margin-bottom: 30px;
+}
+
+.footer-item .contacts a {
+    display: block;
+    margin-bottom: 10px;
+    color: #46c7ab;
+}
+
+.footer-item .contacts a:hover {
+    color: #afafaf;
+}
+
+.footer-item .social-icons i {
+    font-size: 1.6rem;
+    color: #afafaf;
+    margin-right: 5px;
+}
+
+.footer-item .social-icons i:hover {
+    color: #46c7ab;
+}
+
+.bottom-menu li {
+    margin-bottom: 10px;
+}
+
+.bottom-menu li a {
+    color: #afafaf;
+}
+
+.bottom-menu li a:hover {
+    color: #46c7ab;
+}
+
+.footer-item img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all .6s;
+}
+
+.footer-item img:hover {
+    filter: none;
+}
+
+.footer-bottom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #eeeeee;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    width: 60%;
+}
+
+.copyright span {
+    color: #46c7ab;
+}
+
+@media(max-width: 1200px) {
+
+    .mainbox {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .single-item {
+        margin: 25px;
+    }
+
+    .single-item .image-box {
+        width: 270px;
+    }
+
+    .footer-item {
+        width: 24%;
+    }
+}
+
+@media(max-width: 765px) {
+
+    .cars-items {
+        justify-content: center;
+    }
+
+    .single-item {
+        margin: 15px;
+    }
+
+    .footer-item {
+        width: 48%;
+    }
+
+    .footer-item:first-child {
+        order: 1;
+    }
+
+    .footer-item:nth-child(3) {
+        order: 1;
+    }
+
+    .footer-item:nth-child(4) {
+        order: 1;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .footer-item h4 {
+        font-size: 1.8rem;
+    }
+}
