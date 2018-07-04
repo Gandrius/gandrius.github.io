@@ -172,7 +172,7 @@ a {
 .cars-header h3 {
     color: #46c7ab;
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .cars-header a {
@@ -371,6 +371,10 @@ footer {
         padding-right: 20px;
     }
 
+    .nav, .login-box {
+        display: none;
+    }
+
     .single-item {
         margin: 25px;
     }
@@ -398,20 +402,26 @@ footer {
         width: 48%;
     }
 
-    .footer-item:first-child {
-        order: 1;
-    }
-
-    .footer-item:nth-child(3) {
-        order: 1;
-    }
-
-    .footer-item:nth-child(4) {
-        order: 1;
+    .footer-item:nth-child(2) {
+        order: -1;
     }
 }
 
 @media(max-width: 500px) {
+
+    .cars-header {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .cars-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .footer-top {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
 
     .footer-item h4 {
         font-size: 1.8rem;
