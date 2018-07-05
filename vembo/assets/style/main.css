@@ -234,8 +234,111 @@ a {
     height: 90vh;
     background: url(../images/background1.png) no-repeat center center;
     background-size: cover;
-    z-index: 1;
+    justify-content: center;
+    align-items: center;
 }
+
+.home-content {
+    max-width: 1000px;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: -50px 0 75px;
+    padding: 0 15px;
+}
+
+.search-box {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.search-box h3 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form .date-box {
+    justify-content: space-between;
+}
+
+p.date-info {
+    color: white;
+    margin-bottom: 3px;
+}
+
+.start-date, .end-date {
+    position: relative;
+    max-width: 45%;
+}
+
+.start-date span,
+.end-date span,
+.location span,
+.car-type span {
+    position: absolute;
+    padding: 8px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.start-date span,
+.end-date span {
+    top: 16px;
+    left: 0;
+}
+
+.start-date input[type=date],
+.end-date input[type=date],
+.location select,
+.car-type select {
+    width: 100%;
+    padding: 5px 0 5px 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    border: 1px solid #46c7ab;
+    border-radius: 5px;
+    color: white;
+    background: rgba(220, 220, 220, 0.6);
+}
+
+.location select option,
+.car-type select option {
+    background: rgb(218, 218, 218);
+    color: black;
+}
+
+form .location {
+    position: relative;
+    margin: 30px 0;
+}
+
+.search input[type=submit] {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+    padding: 5px 0;
+    font-size: 1.4rem;
+    color: white;
+    background: #46c7ab;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.search input[type=submit]:hover {
+    background: #319680;
+}
+
 
 /* ABOUT SECTION */
 
@@ -532,6 +635,11 @@ footer {
         padding-right: 20px;
     }
 
+    .header-box {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
     .nav, .login-box {
         display: none;
     }
@@ -558,6 +666,12 @@ footer {
 }
 
 @media(max-width: 765px) {
+
+    .home-content h1 {
+        font-size: 3rem;
+        line-height: 1;
+        margin: 0 0 30px;
+    }
 
     .secret-image {
         top: 10%;
@@ -595,7 +709,7 @@ footer {
     }
 
     .drop-links {
-        width: 200px;
+        width: 150px;
         margin: 5px auto;
         padding: 5px 0;
     }
@@ -604,6 +718,27 @@ footer {
         padding: 3px;
         font-size: 1rem;
         transition: 0.6s;
+    }
+
+    .home-content h1 {
+        font-size: 2.4rem;
+        margin: 0 0 30px;
+    }
+
+    .search-box {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .start-date,
+    .end-date {
+        position: relative;
+        max-width: 49%;
+    }
+
+    p.date-info {
+        font-size: .9rem;
     }
 
     .secret-image {
@@ -658,4 +793,38 @@ footer {
     .footer-item h4 {
         font-size: 1.8rem;
     }
+}
+
+@media(orientation: landscape) and (max-height: 481px) {
+
+    .home {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .overlay-content {
+        top: 10%;
+    }
+
+    .overlay a {
+        padding: 5px;
+        font-size: 1.5rem;
+        color: #f0f0f0;
+        display: block;
+        transition: 0.6s;
+    }
+
+    .drop-links {
+        width: 150px;
+        margin: 5px auto;
+        padding: 5px 0;
+    }
+
+    .overlay-content .drop-links a {
+        padding: 3px;
+        font-size: 1rem;
+        transition: 0.6s;
+    }
+
 }
