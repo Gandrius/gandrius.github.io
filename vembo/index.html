@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" type="text/css" href="assets/style/reset.css"/>
     <link rel="stylesheet" type="text/css" href="assets/style/font_awesome/css/fontawesome-all.min.css"/>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/style/bootstrap/css/bootstrap.min.css"/> -->
     <link rel="stylesheet" type="text/css" href="assets/style/SourceSansPro/font.css"/>
     <link rel="stylesheet" type="text/css" href="assets/style/main.css"/>
 </head>
@@ -18,31 +17,62 @@
     <header>
         <div class="header-box mainbox flex">
             <div class="logo-box">
-                <a href="">Logo</a>
+                <a href=""><img src="assets/images/logo/AK-5.png" alt="Vembo Logo" class="logo-img"></a>
             </div>
 
-            <ul class="nav">
-                <a href="#" class="menu-item active"><li>Pradinis</li></a>
-                <a href="#" class="menu-item"><li>Ieškau automobilio</li></a>
-                <a href="#" class="menu-item"><li>Turiu laisvą automobilį</li></a>
-                <a href="#" class="menu-item"><li>Kaip tai veikia?</li></a>
-                <a href="#" class="menu-item dropdown">
-                    <li onclick="myFunction()" class="dropbtn">
-                        Mano paskyra
-                    </li>
-                    <i class="fas fa-caret-down"></i>
-                        <!-- <div id="myDropdown" class="dropdown-content">
-                            <a href="#home">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#contact">Contact</a>
-                        </div> -->
-                </a>
-            </ul>
+            <div class="nav flex">
+                <a href="#" class="menu-item active">Pradinis</a>
+                <a href="#" class="menu-item">Ieškau automobilio</a>
+                <a href="#" class="menu-item">Turiu laisvą automobilį</a>
+                <a href="#" class="menu-item">Kaip tai veikia?</a>
+                <div class="dropdown">
+                    <div class="dropbtn">Mano paskyra 
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                      <div class="dropdown-content">
+                        <a href="#">Mano profilis</a>
+                        <a href="#">Balansas</a>
+                        <a href="#">Rezervacijos</a>
+                        <a href="#">Atsiliepimai</a>
+                        <a href="#">Žinutės</a>
+                        <a href="#">Tapatybė</a>
+                        <a href="#">Nustatymai</a>
+                    </div>
+                </div>
+            </div>
 
             <ul class="login-box">
                 <a href="#" class=""><li>Registruotis</li></a>
                 <a href="#" class=""><li>Prisijungti</li></a>
             </ul>
+
+            <div class="burger-menu" onclick="openNav()">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Pradinis</a>
+                    <a href="#">Ieškau automobilio</a>
+                    <a href="#">Turiu laisvą automobilį</a>
+                    <a href="#">Kaip tai veikia?</a>
+                    <a class="dropdown-min">Mano paskyra <i class="fas fa-caret-down"></i></a>
+                    <div class="drop-links">
+                        <a href="#">Kaip tai veikia?</a>
+                        <a href="#">Mano profilis</a>
+                        <a href="#">Balansas</a>
+                        <a href="#">Rezervacijos</a>
+                        <a href="#">Atsiliepimai</a>
+                        <a href="#">Žinutės</a>
+                        <a href="#">Tapatybė</a>
+                        <a href="#">Nustatymai</a>
+                    </div>
+                    <a href="#">Registruotis</a>
+                    <a href="#">Prisijungti</a>
+                </div>
+            </div>
         </div>
     </header>
     <section class="home">
@@ -297,24 +327,29 @@
         </div>
     </footer>
 
-
     <script src="assets/js/jquery/jquerry.3.3.1.min.js"></script>
-    <!-- <script src="assets/js/popper.js"></script>
-    <script src="assets/style/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="assets/js/main.js"></script>
     <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
+        window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
 
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
+                
                 for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('show')) {
@@ -323,6 +358,19 @@
                 }
             }
         }
+
+        $(document).ready(function(){
+            $(".dropdown-min").click(function(event){
+                $(".drop-links").toggleClass("show-me");
+                event.stopPropagation();
+                
+            });
+
+            $('.closebtn').on('click', function() {
+                $('.drop-links').removeClass("show-me");
+            });
+        });
+
     </script>
 
 </body>
